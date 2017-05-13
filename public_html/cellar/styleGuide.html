@@ -1,0 +1,197 @@
+<html>
+	<head>
+		<script src='../jquery-1.10.2.min.js'></script>
+		<style>
+			body{
+				font-family:avenir;
+				font-weight:bold;
+				font-size:0px;
+				margin-left:50px;
+				margin-right:50px;
+		
+			}
+			.hidden{
+				display:none;
+			}
+			p{
+			}
+			.title{
+				font-size:12px;
+				background-color:#CCC000;
+				padding:5px;
+				margin-bottom:0px;
+				border-radius:5px;
+				cursor:pointer;
+			}
+			.collapsible{
+				font-size:12px;
+				background-color:#C4EAF7;
+				margin:0px;
+				padding:5px;
+				border-radius:0px 0px 5px 5px;
+			}
+			
+			
+		</style>
+		
+		<script>
+			$(document).ready(function(){
+				$('.title').click(function(){
+					var thisID=$(event.target).attr('id');
+					$('.title').css({'border-radius':'5px'});
+					$('#'+thisID).css({'border-radius':'5px 5px 0px 0px'});
+
+					$('.unhidden').removeClass('unhidden').slideToggle(300);
+					$('#'+thisID+'Content').slideToggle(300, function(){
+						$(this).addClass('unhidden'); 
+					});
+					
+					    
+				$(".collapsible").each(function(i,v) {
+					$(this).html( $(this).html().replace(/\n/g,"<br />") );
+					$(this).html( $(this).html().replace(/ /g,"&nbsp;") );
+    });
+				});
+			});
+		
+		</script>
+	</head>
+	<body>
+	<h2>SOCIAL MEDIA STYLE GUIDE</h2>
+	Be modern, be nice, be proud, be funny.
+
+	We are a historically social-based business that functions in an age where people socialise increasingly online. We are a young company and should embrace our youth - which means all of us understand and use the Internet to socialise - as an effective means of communicating.
+	<br />
+	<br />
+	Click on the headings below to read more.
+
+	<h3>General rules:</h3>
+
+	Please check spelling. ESPECIALLY if using someone's name (eg a performer).
+	if @ing someone or linking to another's page, make sure it is the correct person!
+
+	<h4 class='title'>PERSONALITY</h4>
+	<div>
+		This is key to ensuring our online presence is not just an endless spurting of irrelevant boring information.
+		We are a young group of people grounded in pop culture. Our audience on social media will largely be the same, so be unashamed of this, and include opinion and knowledge of your culture in posts.
+	<br />
+	Having said this, we don't want to alienate older followers -	we are a traditional pub (Victorian building beer invented in the 1100s, yada yada) but the products we sell are all modern and quality focused. Posts should reflect this professionalism and subtlety of history but with interest and excitement of the new.
+	<br />
+		We want to project the best aspects of our business Online. Try not to grumble, or be diminutive. Don't 
+			<ul>
+				<li>whinge about our business or customers, </li>
+				<li>mention that we are quiet or empty, </li>
+				<li>mention that some products take a while to sell </li> 
+				<li>complain that you dislike something if we are selling it </li>
+				<li>complain that you dislike music or sport that we have on in the pub</li>
+			</ul>
+		</div>
+<div id="politenessContainer">
+	<h4 class='title'>POLITENESS</h4>
+	<div id='politenessContent' class='hidden collapsible'>
+	We are a young business, but our customer base spans all ages - we are inclusive but obviously grounded in our generation. This means we should treat social media as we would use it ourselves, but stop short of publishing anything which may exclude, confuse, or offend older users.
+	Whilst we all believe that what we are doing is the best, to many others we are simply another side of a coin. We should be careful to not be dismissive of other companies, people, styles or cultures as this comes across as churlish.  Be proud in what we do, but do not be smug.
+	</div>
+</div>
+<div id='contentContainer' </div>
+	<h4 class='title' id='content'>CONTENT</h4>
+	<div id='contentContent' class='hidden collapsible'>
+	Images get more interaction than plain text, 
+	- It is generally better to re-write posts on each platform rather than link accounts - a real photo looks better and will get more interaction than a link to Instagram.
+	Don't be afraid to post content unrelated to a specific event or product we offer. General comments, posts, links etc all help build our personality.
+
+	@ing people in will generate more interactions
+
+	</div>
+</div>
+
+<div id='interactingContainer' </div>
+	<h4 class='title' id='interacting'>INTERACTING WITH OTHERS</h4>
+	<div id='interactingContent' class='hidden collapsible'>
+	Feel free to like or heart at will.
+	Interacting with others' posts is helpful to us and brings us to a wider audience. Given that you are shouting into a void of unknown listeners though (users who do not already follow us will see this stuff) it is especially important to be careful not to offend. Try not to start or exacerbate arguments.
+	Do not overtly or blatantly advertise our business on someone else's page.
+	</div>
+</div>
+
+<div id='feedbackContainer' </div>
+	<h4 class='title' id='feedback'>FEEDBACK</h4>
+	<div id='feedbackContent' class='hidden collapsible'>
+	We should reply to all feedback or comments left on social media.  If the review is positive, first and foremost say thank you.  Do not be 
+	</div>
+</div>
+
+<div id='directMessagingContainer' </div>
+	<h4 class='title' id='directMessaging'>DIRECT MESSAGING</h4>
+	<div id='directMessagingContent' class='hidden collapsible'>
+	- In general I would like to encourage the use of email over social media messaging - it is private and treated by most parties with more respect.
+	- all our messaging is accessible by everyone, so if someone else is engaged in a conversation, do not step in and answer messages - UNLESS it is a time sensitive factual request, such as - "what time are we starting this evening", or "also can you book is a table for when we come down", etc. Remember that to anyone else there is no differentiation between who a message has been sent from so they will assume it is all from the same source.
+	Do not include sensitive information in messages here.
+	</div>
+</div>
+
+<div id='CrazyLeeContainer' </div>
+	<h4 class='title' id='CrazyLee'>CRAZY LEE</h4>
+	<div id='CrazyLeeContent' class='hidden collapsible'>
+	
+	<b>DO NOT ENGAGE.</b>
+	
+	I REPEAT DO NOT ENGAGE.
+
+	Here's a quick guide to spotting a new Crazy Lee account:
+		<ul>
+			<li>Is the account name a random collection of letters or things that sound like they might be human names but are actually just misspelled types of fruit?</li>
+			<li>Have we been mentioned in a post with Siren and Evil Twin breweries?</li>
+			<li>Have we been listed in a string of posts essentially outlining all the services we offer as a business, "amazing pizza", "best selection of beers", "and all the prices are actually not even like you'd get in beer Craft", "amazing bourbon as well", "and they have toilets!" etc. </li>
+			<li>Is the rest of their feed continual posts solely pertaining to Israel?</li>
+		</ul>
+		IF ANY OF THE ABOVE APPLY TO A RECEVIED MESSAGE, FLUSH YOUR PHONE DOWN THE TOILET IMMEDIATELY, AND CONTACT YOUR NEAREST SOCIAL SERVICES BUREAU.
+	
+	</div>
+</div>
+
+
+	<h3>Platform Specific rules</h3>
+
+	<h4 class='title'>TWITTER</h4>
+	Is like shouting into a void. Most things that are posted will not be seen by followers as it is a constant stream of information, and currently is unordered.  
+	Whilst posts should still have personality, do not be afraid of repetition, or over-posting.  Unless we really go crazy no-one is going to unfollow due to too much twitter activity on our part.
+	If starting a tweet with @user only that user will see the tweet.  To make a public tweet about someone else, make the first character a full stop or a space or something. eg: ".@goldentriangle new beer City Brown on the bar now!" etc.
+
+	- photograph pump clips when beers come on.
+	- don't post photos from instagram (they just show as a link - nobody will ever see it)
+	- feel free to post random comments, jokes, etc. content is so fleeting it doesn't matter if it's off-business
+
+
+	<h4 class='title'>FACEBOOK</h4>
+	Facebook orders posts that users see based on their interests and activity from friends.  As such concise, media based or shared posts will get seen the most.  Posts hang around longer, and users are likely to scroll through our whole page so our posts need to be more relevant and less grindingly repetetive.  
+
+	Keep to one post only per event.  However it IS appropriate to comment on this post with further information, eg links to videos or photos, or simply reiterating details. 
+
+	when linking to outside websites, videos, etc. pasting a link into your post will automatically generate a preview image on the post.  Once it's there, you can delete the pasted text link, the preview will remain and be clickable.
+
+	If creating an event, it needs to be shared on our main wall.
+
+	Groups: NR3 Bottle Share, and Quiz have their own groups, direct traffic towards these with periodic postings on our main wall.  keep the groups live with regular updates about each event, and other related thoughts, and encourage people to sign up!  Especially at every event.
+
+
+	<h4 class='title'>INSTAGRAM</h4>
+	This is more about broadcasting our artistic side, rather than meaningful infomration. Make images well composed, and simple.  Use it as a medium to record events we have, like music, well branded products, pretty looking drinks, etc. 
+
+ 
+	Photos go down better than copied images, so take pictures of posters we make when they're on the wall rather than copy a jpeg from somewhere else or whatever. 
+
+
+
+	<!--
+	Beer pictures - Twitter and Instagram split
+
+	MUSIC
+
+	Approved pub fonts:
+	Oswald,Play fair display.
+
+	Links to logos
+	-->
+	</body>
+</html>

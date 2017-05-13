@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('../fonts/oswald-light-webfont.eot');
+    src: url('../fonts/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-light-webfont.woff') format('woff'),
+         url('../fonts/oswald-light-webfont.ttf') format('truetype'),
+         url('../fonts/oswald-light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{ margin: 0px;}
+#website { display: block; position: relative; width: 100%; height: 100%; font-family: oswaldlight; background-size: cover;}
+
+#sidebar { width: 320px; height: 100%; display: block; position: absolute; left: 30px; top: 0px; overflow-x: hidden; overflow-y: scroll; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.8);}
+#sidebarBack { width: 320px; height: 100%; background-color: #000000; opacity: 0.8; z-index: 1; display: block; position: fixed;}
+#sidebarFront { width: 100%; height: 100%; z-index: 10; display: block; position: absolute; }
+#logo { visibility:hidden; display: block; position: absolute; width: 233px; height: 233px; top: 30px; left: 44px; z-index: 20px;}
+#content { display: block; position: absolute; top: 265px;}
+
+#linkbar { position: absolute; display: block; height: 50px; left: 350px; right: 0px; top: 30px; overflow: hidden; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.8);  }
+#linkBack { width: 100%; height: 50px; background-color: #000000; opacity: 0.8; z-index: 1; display: block; position: absolute;}
+#linkFront { width: 100%; height: 50px; z-index: 10; display: block; position: absolute; padding-top: 8px; }
+
+#linkbar h3 {padding-top: 8px;}
+#linkbar a { margin: 5px; padding: 10px; margin-top: 8px;}
+
+h1.tiny { font-size: 1px; color: #000000;}
+h2, p { color: #ffffff; font-size: 16px; padding: 5px 10px 5px 10px; letter-spacing: 2.5px; text-align: center;}
+h2 { font-size: 20px;}
+h3 { font-size: 25px; margin: 0px;}
+a { text-decoration: none; color: #ffffff; }
+
+
+a, .fade {
+   opacity: 0.75;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+a:hover, .fade:hover {
+      opacity: 1;
+      }
+
+
+.gerald {color: #342623; text-align:left;}
+#meetGerald { color: #342623; text-align: center;font-size:65px; letter-spacing: 5px;}
+.geraldhead {color: #342623; text-align: center; }
+#rules {padding-top: 20px; padding-right:100px; padding-left:100px; text-align:left}
+.gerald a {color:black; }		
+
+
+#logoAlone {width:100px; padding-top:10px; padding-right:10px; padding-left:50px;}
+#linkbarAlone { position: absolute; display: block; height: 45px; left: 160px; right: 0px; top: 32.5px; overflow: hidden; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.8);  }
+#linkbarAlone h3 {padding-top: 8px; text-align:left; margin-left:200px;}
+#linkbarAlone a { margin: 5px; padding: 10px; margin-top: 8px; color:#ffffff}
+#moustache {display:block; position:absolute; height:200px; top:35%; left:60%; z-index:25; font-family: oswaldlight; text-align:center; }		
+
+
+/* FOR MENU POPUP */
+
+#menu{
+	/*visibility:hidden;*/
+	z-index:10;
+	position:absolute;
+	left:350px;
+	right:0px;
+	top:80px;
+	bottom:0px;
+}
+
+#menuPopUpConnecter{
+	font-size:0px;
+	position: absolute;
+	width: 0;
+	top: 0px;
+	border-bottom: 30px solid;
+	border-right:50px solid;
+	border-left:20px solid;
+	border-color: transparent transparent rgba(0,0,0,0.8) transparent;
+	opacity:1
+}
+
+#menuPopUp{
+	position:absolute;
+	left:30px;
+	right:30px;
+	top:30px;
+	bottom:30px;
+	border-radius:5px;
+	width:auto;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.menuImage{
+	/*visbility:hidden;*/
+	position:absolute;
+	width:90%;
+	height:auto;
+	top: 50%;
+  transform: translateY(-50%);
+	margin-left: auto;
+  margin-right: auto;
+}
+
+
+.menuImageContainer{
+	display:inline-block;
+	width:90%;
+	height:100%
+}
+
+.cycle{
+	position:absolute;
+  width:5%;
+  height: 100%;
+  display:inline-block;
+  vertical-align:middle;
+  font-size:0px;
+	top:50%;
+  transform: translateY(-50%);
+}
+.cycle p{
+  text-align:center;
+  display:inline-block;
+ 	line-height:100%;
+  vertical-align:middle;
+  color:#fff;
+  height:100%;
+}
+

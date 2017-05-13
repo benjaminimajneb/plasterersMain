@@ -1,0 +1,101 @@
+<html>
+	<head>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>The Plasterers Arms Is Serving Weird Beard, Three Blind Mice, Anderson Valley Hop Ottin</title>
+		<link rel="stylesheet" type="text/css" href="../css/plaster1.css">
+		<script src="../js/jquery-1.10.2.min.js"></script>
+		<meta name="description" content="Website for the Plasterers Arms, who issue treats forth on Fridays">
+		<meta name="keywords" content="Plasterers,Arms,Beer,Norwich,Norfolk,Pub,American,craft beer,festival, friday, treat, day">
+		<meta name="author" content="Benjamin Andrew Hugo Thompson">
+		<meta charset="UTF-8">
+
+
+		<style>
+		#time{
+					color:#bc0f0f;
+					text-align:center;
+		}
+		body {			
+			/*background-color:#f0f0e7;*/
+			background-color:#ffffff;
+			
+		}
+		h1{
+			color:white;
+			font-size:0px;
+		}
+		
+		#pagecontent{
+			margin-top:20px;
+			width:100%;
+			text-align:center;
+		}
+		img{
+			width:400px;
+		}	
+		p{
+			color:black;
+			padding-left:150px;
+			padding-right:150px;
+			
+		}
+		a {
+			color:black;
+		}
+		img{
+			width:auto;
+			height:200px;
+			padding:50px;
+		}
+
+		</style>
+
+
+	</head>
+
+	<body>
+		<div id='pagecontent'>
+			<h1>Anderson Valley Hop Ottin IPA, Three Blind Mice Lonely Snake, Weird Beard Mariana Trench </h1>
+
+			<a href='http://weirdbeardbrewing.blogspot.co.uk/2013/03/mariana-trench.html'>	
+				<img src='http://1.bp.blogspot.com/-3ZUb9SLCONg/UUdQUoyveCI/AAAAAAAAA-M/VoDVXFRoK-Y/s1600/Mariana_cask5.3.jpg' /> 
+			</a>
+
+			<a href='https://avbc.com/our-beers/hop-ottin-ipa/'>	
+				<img src='http://everythingontap.com/files/2014/08/anderson.jpg' /> 
+			</a>
+			
+			<a href='https://www.facebook.com/events/1118089571589900/'>	
+				<img src='lonelySnake.gif' /> 
+			</a>
+			
+			<h2 id='time'></h2>
+			
+			<p>
+				<a href='http://weirdbeardbrewing.blogspot.co.uk/2013/03/mariana-trench.html'>	This week an old favourite (Weird Beard Mariana Trench),</a> 
+				<a href='https://avbc.com/our-beers/hop-ottin-ipa/'>	an exclusive new brewery to Norfolk (California's Anderson Valley Hop Ottin IPA) </a>
+				and a preview of our 	<a href='https://www.facebook.com/events/1118089571589900/'>	Meet The Brewer next week (Three Blind Mice Lonely Snake)</a>.
+				<br/><br/> Hat trick mate. 
+			</p>
+		</div>
+
+	<script>
+
+		var startDate=new Date('July 29, 2016 18:00:00');
+ 		
+		
+		setInterval(function(){
+			var t = Date.parse(startDate) - Date.parse(new Date());
+			var seconds = Math.floor( (t/1000) % 60 );
+			var minutes = Math.floor( (t/1000/60) % 60 );
+			var hours = Math.floor( (t/(1000*60*60)) % 24 );
+			var days = Math.floor( t/(1000*60*60*24) );
+			var html=(seconds>=0)? days+' DAYS, '+hours+' HOURS, '+minutes+' MINUTES, '+seconds+' SECONDS ': 'ON THE BAR NOW';
+			$('#time').html(html);
+			
+		},10);
+	</script>
+	</body>
+
+</html>

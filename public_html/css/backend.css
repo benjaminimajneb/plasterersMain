@@ -1,0 +1,269 @@
+html, body{ font-family: helvetica; margin: 0px; padding:0px;}
+#website {
+	display: block; 
+	position: relative; 
+	width: 98%; 
+	height: 100%; 
+	font-family: helvetica; 
+	margin:1%;
+}
+
+#content { display: block; position: absolute; top: 265px;}
+#headerBar { 
+	position: relative; 
+	display: block; 
+	width:100%; 
+	height: 50px; 
+	top: 0px; 
+	overflow: hidden; 
+	background-color: rgb(0,0,0); 
+	color: #fff;  font-size:16px;
+	text-align:right;
+}
+#headerBar a { color:#fff }
+#headerLogOut { 
+	display:inline-block; 
+	padding:15px;
+}
+
+#headerHome { 
+	display: inline-block; 
+	padding:15px;
+	z-index: 20px;
+}
+
+#headerBar img {
+	height:25px;
+	width:auto;
+	filter: invert(1);
+	-webkit-filter: invert(1);
+}
+
+#sidebar { width: 320px; height: 100%; display: block; position: absolute; left: 30px; top: 0px; overflow-x: hidden; overflow-y: scroll; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.8);}
+#sidebarBack { width: 320px; height: 100%; background-color: #000000; opacity: 0.8; z-index: 1; display: block; position: fixed;}
+#sidebarFront { width: 100%; height: 100%; z-index: 10; display: block; position: absolute; }
+
+#linkpane h3 {padding-top: 8px;}
+#linkpane a { margin: 5px; padding: 10px; margin-top: 8px;}
+
+.linkButton{
+	border-radius:6px;
+	height:32px;
+	padding:5px;
+	margin:5px;
+	border: 2px solid black;
+	background-color:#3F8E7F;
+	color:white;
+	font-size:16px;
+	margin:10px;
+	text-align:center;
+	vertical-align:middle;
+	box-sizing:border-box;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+h1 { font-size: 18px; color: #000000; text-align:center; padding:10px}
+h2, p { color: #000000; font-size: 16px; padding: 5px 10px 5px 10px; letter-spacing: 2.5px; text-align: center;}
+h2 { font-size: 20px;}
+h3 { font-size: 25px; margin: 0px;}
+a { text-decoration: none; color: #000000; }
+
+
+a, .fade {
+   opacity: 0.75;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+a:hover, .fade:hover {
+      opacity: 1;
+      }
+
+
+/* FOR VIEWING BEERS */
+
+h1.current{
+	text-align:left;
+	font-size:3em;
+	margin-bottom:0px;
+}	
+
+#formatChooser{
+	display:inline-block;
+	padding:10px;
+	padding-bottom:0px;
+	position:absolute;
+	right:20px;
+	font-size:2.5em;
+}
+
+.format {
+	display:inline-block;
+	opacity:0.6;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:14px;
+}	
+.formatSelected{
+	opacity: 1;
+	border-radius: 5px 5px 0px 0;
+	background-color:gray;
+}
+#tableContainer{
+	min-width:800px;
+	margin-right:auto;
+	margin-left:auto;
+	background-color:gray;
+	border-radius:5px;
+	padding:0px;
+	padding-top:20px;
+	display:inline-block;
+}
+
+#tableContainer table {
+	font-size: 2em;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#tableContainer td { 
+	margin:0px;
+	padding:5px;
+	text-align: left;
+	
+}
+
+#tableContainer th {
+	padding:5px;
+	text-align:left;
+}
+
+#tableContainer .breweryTd {
+	border:none;
+	border-right:1px solid black;
+	padding-right:7px;
+	text-align:right;
+}
+
+.beerTd{
+	text-align:left;
+	padding-left:7px;
+
+}
+#beerList{
+	border-collapse:collapse;
+	border:none;
+	text-align: center;
+}
+
+.buttonContainer{
+	visibility:hidden;
+	padding:10px
+}
+
+.stateUpdateButton, .beerEditButton {
+	background-color:#909090;
+	border-radius:5px;
+	padding:5px;
+	margin:10px;
+	display:inline-block;
+}
+#page{
+	width:100%;
+	margin:20px;
+}
+.errorBox{
+	width:100%;
+	font-size: 20px;
+	background-color:red;
+	color:white;
+	font-family:courier;
+}
+.button{
+	border-radius:6px;
+	height:40px;
+	padding:5px;
+	margin:5px;
+	border: 2px solid black;
+	background-color:#3F8E7F;
+	color:white;
+	font-size:16px;
+	margin:10px;
+}
+
+.centre{
+	text-align:center;
+}
+#beerList {
+	width:100%;
+	text-align:center;
+}
+#editBeerList {
+	text-align:left;
+	border:1px solid black;
+	border-collapse:collapse;
+	margin-left:auto;
+	margin-right:auto;
+}
+#editBeerList td {
+	border:1px solid black;
+}
+
+.styleOptionsContainer {
+	text-align:left;
+	display:inline-block;
+	margin:0px;
+	height:100%;
+	vertical-align:top;
+}
+
+.stylesOptionsContainerContainer {
+	display:table-cell;
+	text-align:center;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h5 {
+	margin:4px;
+}
+
+.popup {
+	position:fixed;
+	height:auto;
+	width:auto;
+	left:260px;
+	right:260px;
+	top:20px;
+	bottom:20px;
+	z-index:11;
+	border-radius:5px;
+	background-color:gray;
+	overflow:scroll;
+	padding:40px;
+}
+
+#popupBlackout {
+	position:fixed;
+	padding:0px;
+	margin:0px;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	right:0px;
+	width:100%;
+	height:100%;
+	background-color:black;
+	z-index:10;
+	opacity:0.9;
+}
+
+h4 {
+	display:inline-block;
+	padding-right:15px;
+}

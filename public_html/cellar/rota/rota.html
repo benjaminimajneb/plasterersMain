@@ -1,0 +1,204 @@
+<!--
+
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++-----------+--------------+------+-----+---------+----------------+
+| shiftID   | int(8)       | NO   | PRI | NULL    | auto_increment |
+| date      | datetime     | YES  |     | NULL    |                |
+| startTime | time         | YES  |     | NULL    |                |
+| endTime   | time         | YES  |     | NULL    |                |
+| staffID   | int(4)       | YES  |     | NULL    |                |
+| notes     | varchar(128) | YES  |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+
+
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| staffID  | int(4)      | NO   | PRI | NULL    | auto_increment |
+| forename | varchar(64) | YES  |     | NULL    |                |
+| surname  | varchar(64) | YES  |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
+
+
+-- -->
+
+give each table cell (am or pm per day/staff) a div (in which will go any notes)
+attach movements to these individual divs
+
+incorporate draggy.js
+
+have a static shift button top right that can drag over calendar to create new shift
+and a bin underneath it that can remove a shift
+
+
+<!DOCTYPE html>
+
+<head>
+		<script src="jquery-1.11.2.min.js"></script>
+	<style>
+	body {
+		padding:0;
+		border:0;
+		margin:0;
+		font-size:0;
+	}
+	
+	#calendarContainer{
+		margin:20px;
+		border:3px solid gray;
+		vertical-align:top;
+		text-align:right;
+	}	
+	#monthTitle{
+		background-color:white;
+		color:#01DFD7;
+		font-size:25px;
+		font-family:verdana;
+		text-align:center;
+		height:50px;
+	}
+	#titleRow{
+		height:50px;
+	}
+	.dayTitle{
+		margin:0px;
+		padding:0px;
+		background-color:#01DFD7;
+		color:white;
+		border:2px solid gray;
+		width:200px;
+		height:80px;
+		font-size:20px;
+		font-family:helvietica, verdana, sans serif;
+	}
+	
+	.day{
+		border:2px solid gray;
+		width:100px;
+		height:70px;
+		background-color:white;
+		color:gray;
+		font-size:12;
+		font:helvetica;
+		vertical-align:top;
+		position:relative;
+	}
+	.dateNumber{
+		color:black;
+		text-align:right;
+		font-size:12px;
+		float:top;
+		font-family:verdana;
+		height:20px;
+	}
+	
+	.event{
+		font-size:12px;
+		color:black;
+		font-family:verdana;
+		max-height:20px;
+		width:200px;
+		text-overflow: ellipsis;
+		text-wrap:none;
+		padding:0px;
+		margin:0px;
+	}
+	
+	.event:hover{
+		z-index:10;
+		width:auto;
+		text-overflow:initial;
+	}
+	
+	.empty{
+		background-color:gray;
+		color:white;
+		font-size:12px;
+
+	}
+	.today {
+		background-color:red;
+		color:white;
+		font-size:12px;
+	}	
+	.arrow{
+		background-color:#01DFD7;
+		color:white;
+		font-size:30px;
+		height:40px;
+		width:40px;
+		display:inline-block;
+		margin:10px;
+		padding:10px;
+	}
+	
+	</style>
+
+
+</head>
+
+
+<body>
+	
+	<table id='rotaContainer'>
+		
+		<tr id="staffNames">
+			
+		</tr>		
+		
+		<tr id="0am">
+		
+		</tr>
+		<tr id="0pm">
+		
+		</tr>
+		<tr id="1am">
+		
+		</tr>
+		<tr id="1pm">
+		
+		</tr>
+		<tr id="2am">
+		
+		</tr>
+		<tr id="2pm">
+		
+		</tr>
+		<tr id="3am">
+		
+		</tr>
+		<tr id="3pm">
+		
+		</tr>
+		<tr id="4am">
+		
+		</tr>
+		<tr id="4pm">
+		
+		</tr>
+		<tr id="5am">
+		
+		</tr>
+		<tr id="5pm">
+		
+		</tr>
+		<tr id="6am">
+		
+		</tr>
+		<tr id="6pm">
+		
+		</tr>
+		
+	</table><!--calendarContainer-->
+
+	<div class='arrow' id='rightArrow' onclick='nextWeek()'>&gt Next Week</div>
+	<div class='arrow' id='leftArrow' onclick='previousweek()'>&lt Previous Week</div>
+
+
+
+
+	
+</body>
+
+</html>
