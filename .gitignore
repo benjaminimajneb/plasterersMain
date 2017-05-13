@@ -10,5 +10,7 @@ Thumbs.db
 # ignore specific folders
 Female/*
 /public_html/Female/*
+
 # ignore instance specific files
 .environment.php
+include/.environment.php
