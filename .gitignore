@@ -1,3 +1,22 @@
+#ignore server set up:
+.  ..  
+.bash_history  
+.bashrc  
+.htaccess  
+.mysql_history  
+.ssh	
+mysql_backups/*	 
+subdomains/*
+public_html/subd/*
+public_html/subd
+public_html/venn
+public_html/venn/*
+public_html/.ftpquota
+public_html/.htaccess
+public_html/cgi-bin
+public_html/cgi-bin/*
+
+
 # ignore Apple files etc
 .DS_Store
 .DS_Store?
